@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html> 
+  <head> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+    <link rel="stylesheet" href="/wheat.css" type="text/css"/>
+   <title>wheat hARvesT :: Find Wheat</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA3rlwvf3qYoNvHs7CuMtTXRRp24J82Fv8NZCDlAaGje_SjVO4PBQ6lgDJunjpvPycBT5cy5 QI38USOw" type="text/javascript"></script> 
+  </head> 
+  <body onunload="GUnload()"> 
+  
+ 	<div id="container">
+ 
+	<div id="header">
+	<a href="index.html"><img src="/images/header2.png" alt="" width="627" height="101"/></a>
+	</div>
+  
+	<div id="nav">
+  	<ul>
+  		<li><a href="events_c.html">events</a></li>
+    	<li><b><a href="findwheat.html">find wheat</a></b></li>
+    	<li><a href="publicity.html">publicity</a></li>
+    	<li><a href="support.php">support</a></li>
+    	<li><a href="bio.html">bio</a></li>
+    	<li><a href="otherprojects.html">other projects</a></li>
+  	</ul>
+  	</div>
+  
+	<div id="main">
+		<h2>Locations of home-grown wheat in San Diego, CA</h2>
+        <p>Browse or search the map below to see where your fellow San Diegans are growing wheat in their own backyards! And if YOU are growing your own wheat please consider adding your location and a photo of your wheat crop to the map.</p> 
+
+    	<div id="map" style="width:450px; height:auto; min-height:300px;"></div>
+        
+        <h1><a href="grow.html">Learn how to grow your own wheat!</a></h1>
+    </div>
+
+  	<div id="footer">
+    <a href="mailto:david@wheatharvest.org">david@wheatharvest.org</a>
+  	</div>
+    </div>
+ 
+ 
+    <noscript><b>JavaScript must be enabled in order for you to use Google Maps.</b> 
+      However, it seems JavaScript is either disabled or not supported by your browser. 
+      To view Google Maps, enable JavaScript by changing your browser options, and then 
+      try again.
+    </noscript> 
+ 
+ 
+    <script type="text/javascript"> 
+    
+    if (GBrowserIsCompatible()) { 
+  
+      function createMarker(point,html) {
+        var marker = new GMarker(point);
+        GEvent.addListener(marker, "click", function() {
+          marker.openInfoWindowHtml(html);
+        });
+        return marker;
+      }
+ 
+      var map = new GMap2(document.getElementById("map"));
+      map.addControl(new GLargeMapControl());
+      map.addControl(new GMapTypeControl());
+      map.setCenter(new GLatLng(32.748472,-117.126286),15);
+    
+      // Set up three markers with info windows 
+    
+	 var point = new GLatLng(32.746231,-117.133635);
+      var marker = createMarker(point,'Jefferson Elementary School<br><a href="/images/map/0005.jpg" target="_blank"><img src="/images/map/0005.jpg" width=150 height=100><\/a></br>')
+      map.addOverlay(marker);
+	  
+	var point = new GLatLng(32.766635,-117.122823);
+      var marker = createMarker(point,'Normal Heights backyard<br><a href="/images/map/0001.jpg" target="_blank"><img src="/images/map/0001.jpg" width=150 height=100><\/a></br>')
+      map.addOverlay(marker);
+ 
+      var point = new GLatLng(32.748228,-117.126333);
+      var marker = createMarker(point,'Bales in front of the<br>Art Produce Gallery</br><br><a href="/images/map/0004.jpg" target="_blank"><img src="/images/map/0004.jpg" width=150 height=100><\/a></br>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(32.81989,-117.239647);
+      var marker = createMarker(point,'Mt. Soledad backyard<br><a href="/images/map/0002.jpg" target="_blank"><img src="/images/map/0002.jpg" width=150 height=100><\/a></br>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(33.048823,-117.272552);
+      var marker = createMarker(point,'Encinitas wheat & weeds<br><a href="/images/map/0003.jpg" target="_blank"><img src="/images/map/0003.jpg" width=100 height=150><\/a></br>')
+      map.addOverlay(marker);
+    }
+    
+    // display a warning if the browser was not compatible
+    else {
+      alert("Sorry, the Google Maps API is not compatible with this browser");
+    }
+ 
+    // This Javascript is based on code provided by the
+    // Community Church Javascript Team
+    // http://www.bisphamchurch.org.uk/   
+    // http://econym.org.uk/gmap/
+ 
+    //]]>
+    </script> 
+  </body> 
+ 
+</html> 
+ 
+ 
+ 
+ 

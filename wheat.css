@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+body {
+	background: #FC0;
+	height: 100%;
+	/*background-image: url(/images/wicon_b.png);
+	background-repeat: no-repeat;
+	background-position: center right;*/}
+
+body a:link {
+	color: #0000FF;}
+
+body a:visited {
+	color: #630;}
+	
+h1 {
+	font: bold 100% Arial, Helvetica, sans-serif;}
+	
+h2 {
+	font: italic bold 100% Arial, Helvetica, sans-serif;}
+	
+h3 {
+	font: 100% Arial, Helvetica, sans-serif;
+	background-color: #FC0; 
+	text-align: center;
+	margin-left: 75px;
+	width: 600px;}
+	
+p {
+	font: 100% Arial, Helvetica, sans-serif;}
+	
+.fb-page {
+    position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: none;
+}
+	
+#container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFC;
+	top: 0px;
+	width: 800px;
+	min-height: 100%;
+	font: 100% Arial, Helvetica, sans-serif;
+	text-align: justify;
+	color: #000;}
+
+#header { 
+	position: fixed;
+	top: 0;
+	height: 105px;
+	width: 800px;
+	background-color: #FC0;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 0;
+	text-align: center;
+	z-index: 1;}
+
+#header img {
+	border: none;}
+
+#nav ul {
+	position: fixed;
+	top: 105px;
+	height: 20px;
+	width: 800px;
+	padding: 7px 0px;
+	margin: 0 0 0 0;
+	list-style-type: none;
+	background-color: #FFC;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #FC0;
+	z-index: 1;}
+
+#nav li {
+	display: inline; }
+
+#nav li a {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	margin: 0px; }
+
+#nav li a:link {
+	color: #000;
+	text-decoration: none; }
+
+#nav li a:visited {
+	color: #000;
+	text-decoration: none; }
+
+#nav li a:hover {
+	color: #360; 
+	text-decoration: none; }
+
+#subnav ul {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	height: 15px;
+	padding: 7px 0px 0px 10px;
+	margin: 0 0 0 0;
+	list-style-type: none;}
+	
+#subnav li {
+	display: inline; }
+
+#subnav li a{
+	color: #000;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 10px;}
+
+#subnav li a:link {
+	color: #000;
+	text-decoration: none; }
+
+#subnav li a:visited {
+	color: #000;
+	text-decoration: none; }
+
+#subnav li a:hover {
+	color: #360; 
+	text-decoration: none; }
+
+#main { 
+	position: relative;
+	top: 145px;
+	width: auto;
+	height: auto;
+	min-height: 550px;
+	background: #FFC;
+	padding: 10px 20px 25px 20px;
+	margin: 0 0 0 0; 
+	overflow: auto;}
+
+#main li {
+	padding: 5px 0px;
+	text-decoration: none;}
+	
+#main small {
+	padding: 0px 20px;}
+
+#main form {
+	display:inline;
+	border: none;}
+	
+#main span {
+	border: none;
+	float: left;
+	padding: 2px;
+	margin: 10px 10px 0px 0px;
+	background-color: black;
+	color: #999;
+	font-size: 75%;
+	text-align: center;
+	text-decoration: none;}
+
+#main span2 {
+	border: none;
+	float: right; 
+	padding: 2px;
+	margin: 8px;
+	background-color: black;
+	color: #999;
+	font-size: 75%;
+	text-align: center;
+	text-decoration: none;}
+
+#main img {
+	border: none;
+	position: relative;
+	padding: 2px;
+	background-color: black;
+	color: #999;
+	font-size: 75%;
+	text-align: center;
+	text-decoration: none;}
+	
+#main object {
+	border: none;
+	position: relative;
+	left: 120px;
+	padding: 2px;
+	background-color: black;
+	color: #999;
+	font-size: 75%;
+	text-align: center;
+	text-decoration: none;}
+	
+.gallery {
+	color: #999;
+	text-decoration: none;
+	text-align: center;}
+
+.gallery img {
+	border: 1px solid black;
+	margin: 0 0 0 0;}
+
+.gallery:hover {
+	background-color: transparent;}
+
+.gallery span {
+	position: absolute;
+	background-color: black;
+	border: none;
+	visibility: hidden;}
+
+.gallery:hover span {
+	visibility: visible;
+	top: 0px;
+	left: 350px;}
+
+.thumbnail {
+	position: relative;
+	z-index: 0;}
+
+.thumbnail img {
+	border: 1px solid black;
+	margin: 0 0 0 0;}
+
+.thumbnail:hover {
+	background-color: transparent;
+	z-index: 50;}
+
+.thumbnail span { 
+	position: absolute;
+	background-color: lightyellow;
+	padding: 5px;
+	left: 300px;
+	border: 1px dashed gray;
+	visibility: hidden;}
+
+.thumbnail span img { 
+	border-width: 0;
+	padding: 2px;}
+
+.thumbnail:hover span { 
+	visibility: visible;
+	top: 10px;
+	left: -140px;}
+	
+#footer {
+	position: fixed;
+	bottom: 0;
+	height: 25px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FC0;
+	text-align: center;
+	font-size: 75%;
+	font-weight: bold;
+	padding: 5px 0px 0px;} 
+
+#footer a:link {
+	color: #000;
+	text-decoration: none; }
+	
+#footer a:visited: {
+	color: #000;
+	text-decoration: none; }
